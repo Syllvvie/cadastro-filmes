@@ -1,0 +1,17 @@
+<h1>FILMES EM <span style="color: rgb(215, 20, 20);">CARTAZ</span></h1>
+<div class="container-cards">
+    {{#each filmes}}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/uploads/{{capa}}" alt="{{titulo}}">
+        <div class="card-body">
+            <h5 class="card-title">{{titulo}}</h5>
+            <p class="card-subtitle">Produzido por: {{diretor}}</p>
+            <p class="card-text mb-0">Ano de Lançamento: {{ano}}</p>
+            <p class="card-text">Gênero: {{genero}}</p>
+        </div>
+    </div>
+    {{/each}}
+    {{#unless filmes}}
+    <p class="text-center" style="color: white;">Nenhum filme em cartaz no momento.</p>
+    {{/unless}}
+</div>

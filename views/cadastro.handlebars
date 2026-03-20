@@ -1,0 +1,44 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Cadastro de Filme</h1>
+    <form action="/filmes" method="POST" enctype="multipart/form-data" class="needs-validation">
+        <div class="row g-3">
+            <div class="col-12">
+                <label for="formFile" class="form-label">Cartaz:</label>
+                <input class="form-control" type="file" id="formFile" name="capa" accept="image/*" required>
+            </div>
+            <div class="col-md-6">
+                <label for="titulo" class="form-label">Título</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
+            <div class="col-md-6">
+                <label for="diretor" class="form-label">Diretor</label>
+                <input type="text" class="form-control" id="diretor" name="diretor" required>
+            </div>
+            <div class="col-md-6">
+                <label for="ano" class="form-label">Ano de Lançamento</label>
+                <input type="text" class="form-control" id="ano" name="ano" required>
+            </div>
+            <div class="col-md-6">
+                <label for="genero" class="form-label">Gênero</label>
+                <select class="form-select" id="genero" name="genero" required>
+                    <option value="">Selecione um gênero</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Ficção Científica">Ficção Científica</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Documentário">Documentário</option>
+                    <option value="Animação">Animação</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="descricao" class="form-label">Descrição</label>
+                <textarea class="form-control" id="descricao" name="descricao" rows="4" required></textarea>
+            </div>
+            <div class="text-center col-12">
+                <button type="submit" class="btn btn-primary">Cadastrar Filme</button>
+            </div>
+        </div>
+    </form>
+</div>

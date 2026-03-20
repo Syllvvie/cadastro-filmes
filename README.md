@@ -1,1 +1,1 @@
-Site de cadastro feito usando Node.js para entrega de trabalho academico.
+Site de cadastro de filmes feito em Node.js para entrega de trabalho academico.

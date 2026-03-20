@@ -31,7 +31,7 @@ const Filme = sequelize.define('filmes', {
     },
 });
 
-// Filme.sync({force: true})
+Filme.sync({force: true}) // comente para parar de resetar a db
 
 module.exports = Filme
 
